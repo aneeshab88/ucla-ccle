@@ -50,3 +50,433 @@
 @include motion-ui-animations;
 
 @import 'components/topbar';
+
+
+.row {
+    margin-left:0;
+    margin-right:0;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {color: black;}
+
+a:hover {text-decoration: underline;}
+
+h1 {
+     font-size: 20px;
+     color: #345e8f;
+}
+
+h2 {
+     font-size: 30px;
+     color: #345e8f;
+}
+
+h2 a {
+     font-size: 20px;
+     color: #345e8f;
+     padding: 20px;
+}
+
+header {
+   height: 100px;
+   position: relative;
+   background-color: #345e8f;
+}
+
+header .logo {
+   margin-left :5px;
+   margin-top :15px;
+}
+
+header .logo-ccle {
+   position: absolute;
+   color: #FFBC00;
+   font-size: 42px;
+   font-weight: bold;
+   margin-left :5px;
+   margin-top :0px;
+}
+
+header .title a {
+   position: absolute;
+   color: #FFBC00;
+   font-size: 10px;
+   font-weight: bold;
+   text-decoration: none;
+   left: 18px;
+   bottom: 36px;
+}
+
+
+/* LOG IN */
+
+nav ul {
+  right: 180px;
+  bottom: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  float: right;
+  background: #FFBC00;
+  border-bottom: 1px solid #fff;
+  border-radius: 3px;
+}
+
+nav #login-trigger,
+nav #signup a {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  height: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  padding: 0 8px;
+  text-decoration: none;
+  color: #444;
+  text-shadow: 0 1px 0 #fff;
+}
+
+nav #signup a {
+  border-radius: 0 3px 3px 0;
+}
+
+nav #login-trigger {
+  border-radius: 3px 3px 0 3px;
+}
+
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+  background: #fff;
+}
+
+nav #login-content {
+  display: none;
+  position: absolute;
+  top: 24px;
+  z-index: 999;
+  background: #fff;
+  background-image: linear-gradient(top, #fff, #eee);
+  padding: 8px;
+  box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+  border-radius: 3px 0 3px 3px;
+}
+
+nav li #login-content {
+  right: 0;
+  width: 165px;
+}
+
+#login-content p {
+    font-size: 13px;
+}
+
+#inputs input {
+  background: #f1f1f1;
+  padding: 6px 5px;
+  margin: 0 0 5px 0;
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px #ccc inset;
+}
+
+#inputs input:focus {
+  background-color: #fff;
+  border-color: #e8c291;
+  outline: none;
+  box-shadow: 0 0 0 1px #e8c291 inset;
+}
+
+#login #actions {
+  margin: 10px 0 0 0;
+}
+
+#login #submit {
+  background-color: #345e8f;
+  background-image: linear-gradient(top, #e97171, #FFBC00);
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 1px solid #7e1515;
+  float: left;
+  height: 30px;
+  padding: 0;
+  width: 100px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#login #submit:hover,
+#login #submit:focus {
+  background-color: #FFBC00;
+  background-image: linear-gradient(top, #345e8f, #e97171);
+}
+
+#login label {
+  float: left;
+  line-height: 30px;
+}
+
+#login p {
+    float: left;
+}
+
+/*-----LOG IN-----*/
+
+
+/* HELP */
+
+header nav.help {
+   position: absolute;
+   right: 105px;
+   bottom: 10px;
+   z-index: 999;
+   border-bottom: 1px solid #fff;
+   border-radius: 3px;
+   border-top: 1px solid #ddd;
+   box-shadow: 1px 0 0 #fff;
+   border-radius: 3px 3px 3px 3px;
+}
+
+header .help a {
+   letter-spacing: 3px;
+   text-decoration: none;
+   color: #444;
+   text-shadow: 0 1px 0 #fff;
+   letter-spacing: 2px;
+   font-size: 12px;
+}
+
+.dropbtn {
+    background-color: #FFBC00;
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 168px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+/*-----HELP-----*/
+
+
+header nav.week-display {
+   position: absolute;
+   right: 0px;
+   top: 10px;
+   margin-right: 10px;
+   color: #fff;
+   font-size: 13px;
+}
+
+/* SEARCH */
+
+.search .column{
+    padding-right: 0px;
+}
+
+.search img {
+    cursor: pointer;
+    padding: 10px;
+    background: #345e8f;
+}
+
+.search img:active{
+    box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+}
+
+.search-sites {
+    height: 100px;
+    margin-left: 20px;
+    background-color: white;
+    color: grey;
+    font-size: 14px;
+}
+
+/*-----SEARCH-----*/
+
+
+/* SLIDESHOW */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text-h {
+  background-color: #FFBC00;
+  opacity: 0.8;
+  color: #345e8f;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 8px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.text-p {
+  color: #f2f2f2;
+  background: rgba(0,0,0,0.5);
+  font-size: 15px;
+
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.text-p a {
+  color: #FFBC00;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*-----SLIDESHOW-----*/
+
+
+.vertical {
+     color: #345e8f;
+     margin: 10px;
+     padding-top: 20px;
+}
+
+.vertical a {
+     font-size: 15px;
+     color: #345e8f;
+     letter-spacing: 2px;
+     font-weight: bold;
+}
+
+footer{
+   background-color: #FFBC00;
+   font-size: 15px;
+}
+
+footer .base{
+    text-align: center;
+}
+
+footer .base a {
+    padding-right: 28px;
+    color: #345e8f;
+    font-weight: bold;
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
