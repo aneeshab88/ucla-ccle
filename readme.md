@@ -1,4 +1,4 @@
-Please check Redesign_Documentation file for screenshots and process.
+Please unzip Redesign_Documentation.pdf.zip file for screenshots and process.
 
 # CCLE Template
 
