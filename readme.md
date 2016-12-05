@@ -1,3 +1,5 @@
+Please check Redesign_Documentation file for screenshots and process.
+
 # CCLE Template
 
 ## Task
